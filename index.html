@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Octavian Suciu</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+  </head>
+  <body>
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+
+<div class="container">
+<h2>Octavian Suciu</h2><hr>
+<div class="row">
+    <div class="col-xs-4 text-left">
+    <img src="me.png" width="100%" height="100%"/>
+    </div>
+    <div class="col-xs-8 text-left">
+    <p>
+        I am a Postdoctoral Researcher in the <a href="https://cyber.umd.edu/">Maryland Cybersecurity Center</a> at <a href="https://www.umiacs.umd.edu/">UMIACS</a>.
+    </p>
+    <p>
+        I received my PhD in Computer Science from UMD in 2021, working with <a href="http://users.umiacs.umd.edu/~tdumitra/">Prof. Tudor Dumitras</a>.
+        My dissertation focused on <a href="https://drum.lib.umd.edu/handle/1903/28370">Data-Driven Techniques For Vulnerability Assessments</a>.
+    </p>
+    <p>
+        My research interests include building robust systems for security, large scale measurements and the security of machine learning.  
+        I also enjoy collecting unstructured data at scale and analyzing it to discover new cyberthreat indicators. 
+    </p>
+    <p>
+        I contribute to the development of security systems that are used by thousands of practitioners daily:
+        <ul>
+            <li>
+                <a href="https://www.first.org/epss/" target="blank">Exploit Prediction Scoring System (EPSS)</a> - a machine learning scoring system capturing the risk of  attacks in the wild against vulnerabilities.
+            </li>
+            <li>
+                <a href="https://exploitability.app/" target="blank">Expected Exploitability</a> - a deep learning-based system that continuously monitors and collects Web information about vulnerabilities, predicting their ease of exploitation.
+            </li>
+            <li>
+                <a href="https://cvss.exploitability.app/" target="blank">CVSS Predictor</a> - a large language model fine-tuned to compute the CVSSv3 score for a vulnerability from its description.
+            </li>
+        </ul>
+    </p>
+    <p>
+        My work has been featured in the media, by <a href="https://www.scmagazine.com/feature/as-hot-zero-day-summer-rolls-on-experts-think-this-might-be-the-new-normal" target="blank">SC Magazine</a>, <a  href="https://www.darkreading.com/application-security/security-bugs-exploited-model-machine-learning" target="blank">Dark Reading</a>, <a href="https://www.theregister.com/2017/01/24/summoning_demons_to_find_bugs/" target="blank">The Register</a> and <a href="https://www.technologyreview.com/2016/12/15/155404/how-long-before-ai-systems-are-hacked-in-creative-new-ways/" target="blank">MIT Technology Review</a>.
+    </p>
+    </div>
+</div>
+</div>
+
+<br>
+<br>
+
+<a id="publications"></a>
+<div class="container">
+<h4> Publications (<a href="https://scholar.google.com/citations?hl=en&user=t2vIfoAAAAAJ&view_op=list_works&sortby=pubdate" target="blank">Scholar</a>)</h4><hr>
+<ul>
+
+    <li> Jay Jacobs, Sasha Romanosky, <u>Octavian Suciu</u>, Ben Edwards, Armin Sarabi: <a href="https://weis2023.econinfosec.org/wp-content/uploads/sites/11/2023/06/weis23-jacobs.pdf"><strong>Enhancing Vulnerability Prioritization: Data-Driven Exploit Predictions with Community-Driven Insights</strong></a> - WEIS 2023.
+        <button data-toggle="collapse" data-target="#weis2023" class="btn">Abstract</button>- <a href="https://www.first.org/epss/data_stats"><strong>[Explore Data]</strong></a>
+        <div id="weis2023" class="collapse">
+            <em> The number of disclosed vulnerabilities has been
+                steadily increasing over the years. At the same time, organizations face significant challenges patching their systems,
+                leading to a need to prioritize vulnerability remediation in
+                order to reduce the risk of attacks.
+                Unfortunately, existing vulnerability scoring systems are
+                either vendor-specific, proprietary, or are only commercially
+                available. Moreover, these and other prioritization strategies
+                based on vulnerability severity are poor predictors of actual
+                vulnerability exploitation because they do not incorporate
+                new information that might impact the likelihood of exploitation.
+                In this paper we present the efforts behind building
+                a Special Interest Group (SIG) that seeks to develop a
+                completely data-driven exploit scoring system that produces
+                scores for all known vulnerabilities, that is freely available,
+                and which adapts to new information. The Exploit Prediction
+                Scoring System (EPSS) SIG consists of more than 170 experts
+                from around the world and across all industries, providing
+                crowd-sourced expertise and feedback.
+                Based on these collective insights, we describe the design
+                decisions and trade-offs that lead to the development of the
+                next version of EPSS. This new machine learning model provides an 82% performance improvement over past models in
+                distinguishing vulnerabilities that are exploited in the wild
+                and thus may be prioritized for remediation.  </em> </div> </li><br>
+    
+
+    <li> <u>Octavian Suciu</u>, Connor Nelson, Zhuoer Lyu, Tiffany Bao, Tudor Dumitraş: <a href="https://www.usenix.org/system/files/sec22summer_suciu.pdf"><strong>Expected Exploitability: Predicting the Development of Functional Vulnerability Exploits</strong></a> - USENIX Security 2022 (18% Acceptance Rate).
+    <button data-toggle="collapse" data-target="#usenix22" class="btn">Abstract</button>- <a href="https://arxiv.org/abs/2102.07869"><strong>[Technical Report]</strong></a><a href="https://exploitability.app/"><strong>[System]</strong></a>
+    <div id="usenix22" class="collapse">
+        <em> Assessing the exploitability of software vulnerabilities at the time of disclosure is difficult and error-prone, as features extracted via technical analysis by existing metrics are poor predictors for exploit development. Moreover, exploitability assessments suffer from a class bias because "not exploitable" labels could be inaccurate.
+            To overcome these challenges, we propose a new metric, called Expected Exploitability (EE), which reflects, over time, the likelihood that functional exploits will be developed. Key to our solution is a time-varying view of exploitability, a departure from existing metrics. This allows us to learn EE using data-driven techniques from artifacts published after disclosure, such as technical write-ups and proof-of-concept exploits, for which we design novel feature sets.
+            This view also allows us to investigate the effect of the label biases on the classifiers. We characterize the noise-generating process for exploit prediction, showing that our problem is subject to the most challenging type of label noise, and propose techniques to learn EE in the presence of noise.
+            On a dataset of 103,137 vulnerabilities, we show that EE increases precision from 49% to 86% over existing metrics, including two state-of-the-art exploit classifiers, while its precision substantially improves over time. We also highlight the practical utility of EE for predicting imminent exploits and prioritizing critical vulnerabilities.
+            We develop EE into an online platform which is publicly available at <a href="https://exploitability.app/">https://exploitability.app/</a>.  </em> </div> </li><br>
+
+    <li> <u>Octavian Suciu</u>, Scott E. Coull, Jeffrey Johns: <a href="https://arxiv.org/abs/1810.08280"><strong>Exploring Adversarial Examples in Malware Detection</strong></a> - <a href="https://www.ieee-security.org/TC/SPW2019/DLS/">2019 IEEE Security and Privacy Deep Learning and Security Workshop</a> (35% Acceptance Rate). - <a href="https://www.ieee-security.org/TC/SPW2019/DLS/doc/02-Suciu.pdf"><strong>[Slides]</strong></a>
+        <button data-toggle="collapse" data-target="#dls18", class="btn">Abstract</button>
+        <div id="dls18" class="collapse">
+        <em> The Convolutional Neural Network (CNN) architecture is increasingly being applied to new domains, such as malware detection, where it is able to learn malicious behavior from raw bytes extracted from executables. These architectures reach impressive performance with no feature engineering effort involved, but their robustness against active attackers is yet to be understood. Such malware detectors could face a new attack vector in the form of adversarial interference with the classification model. Existing evasion attacks intended to cause misclassification on test-time instances, which have been extensively studied for image classifiers, are not applicable because of the input semantics that prevents arbitrary changes to the binaries. This paper explores the area of adversarial examples for malware detection. By training an existing model on a production-scale dataset, we show that some previous attacks are less effective than initially reported, while simultaneously highlighting architectural weaknesses that facilitate new attack strategies for malware classification. Finally, we explore more generalizable attack strategies that increase the potential effectiveness of evasion attacks. </em> </div> </li><br>
+    
+
+    <li> Ali Shafahi, W. Ronny Huang, Mahyar Najibi, <u>Octavian Suciu</u>, Christoph Studer, Tudor Dumitraş, Tom Goldstein: <a href="https://arxiv.org/abs/1804.00792"><strong> Poison Frogs! Targeted Clean-Label Poisoning Attacks on Neural Networks</strong> </a> - NeurIPS 2018  (21% Acceptance Rate).
+        <button data-toggle="collapse" data-target="#neurips18", class="btn">Abstract</button>- <a href="https://github.com/ashafahi/inceptionv3-transferLearn-poison"><strong>[Code]</strong></a>
+        <div id="neurips18" class="collapse">
+        <em> Data poisoning is an attack on machine learning models wherein the attacker adds examples to the training set to manipulate the behavior of the model at test time. This paper explores poisoning attacks on neural nets. The proposed attacks use ‘clean-labels’; they don’t require the attacker to have any control over the labeling of training data. They are also targeted; they control the behavior of the classifier on a specific test instance without degrading overall classifier performance. For example, an attacker could add a seemingly innocuous image (that is properly labeled) to a training set for a face recognition engine, and control the identity of a chosen person at test time. Because the attacker does not need to control the labeling function, poisons could be entered into the training set simply by leaving them on the web and waiting for them to be scraped by a data collection bot. We present an optimization-based method for crafting poisons, and show that just one single poison image can control classifier behavior when transfer learning is used. For full end-to-end training, we present a ‘watermarking’ strategy that makes poisoning reliable using multiple (≈50) poisoned training instances. We demonstrate our method by generating poisoned frog images from the CIFAR dataset and using them to manipulate image classifiers. </em> </div> </li><br>
+    
+    <li> <u>Octavian Suciu</u>, Radu Marginean, Yigitcan Kaya, Hal Daumé III, Tudor Dumitraş: <a href="https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-suciu.pdf"><strong> When Does Machine Learning FAIL? Generalized Transferability for Evasion and Poisoning Attacks</strong> </a> - USENIX Security 2018 (19% Acceptance Rate).  
+    <button data-toggle="collapse" data-target="#usenix18", class="btn">Abstract</button>- <a href="https://arxiv.org/abs/1803.06975"><strong>[Technical Report]</strong></a><a href="https://www.usenix.org/sites/default/files/conference/protected-files/security18_slides_suciu.pdf"><strong>[Slides]</strong></a><a href="https://www.usenix.org/conference/usenixsecurity18/presentation/suciu"><strong>[Talk]</strong></a>
+    <div id="usenix18" class="collapse">
+    <em> Recent results suggest that attacks against supervised machine learning systems are quite effective, while defenses are easily bypassed by new attacks. However, the specifications for machine learning systems currently lack precise adversary definitions, and the existing attacks make diverse, potentially unrealistic assumptions about the strength of the adversary who launches them. We propose the FAIL attacker model, which describes the adversary's knowledge and control along four dimensions. Our model allows us to consider a wide range of weaker adversaries who have limited control and incomplete knowledge of the features, learning algorithms and training instances utilized. To evaluate the utility of the FAIL model, we consider the problem of conducting targeted poisoning attacks in a realistic setting: the crafted poison samples must have clean labels, must be individually and collectively inconspicuous, and must exhibit a generalized form of transferability, defined by the FAIL model. By taking these constraints into account, we design StingRay, a targeted poisoning attack that is practical against 4 machine learning applications, which use 3 different learning algorithms, and can bypass 2 existing defenses. Conversely, we show that a prior evasion attack is less effective under generalized transferability. Such attack evaluations, under the FAIL adversary model, may also suggest promising directions for future defenses. </em> </div> </li><br>
+
+    <li> Tudor Dumitraş, Yigitcan Kaya, Radu Marginean and <u>Octavian Suciu</u>: <strong> Too Big to FAIL: What You Need to Know Before Attacking a Machine Learning System </strong> - <a href="https://spw2018.crocs.fi.muni.cz/programme.html">26th International Workshop on Security Protocols, 2018</a>.
+        <button data-toggle="collapse" data-target="#spw", class="btn">Abstract</button>
+        <div id="spw" class="collapse">
+        <em> There is an emerging arms race in the field of adversarial machine learning (AML). Recent results suggest that machine learning (ML) systems are vulnerable to a wide range of attacks; meanwhile, there are no systematic defenses. In this position paper we argue that to make progress toward such defenses, the specifications for machine learning systems must include precise adversary definitions—a key requirement in other fields, such as cryptography or network security. Without common adversary definitions, new AML attacks risk making strong and unrealistic assumptions about the adversary’s capabilities. Furthermore, new AML defenses are evaluated based on their robustness against adversarial samples generated by a specific attack algorithm, rather than by a general class of adversaries. We propose the FAIL adversary model, which describes the adversary’s knowledge and control along four dimensions: data Features, learning Algorithms, training Instances and crafting Leverage. We analyze several common assumptions often implicit, from the AML literature, and we argue that the FAIL model can represent and generalize the adversaries considered in these references. The FAIL model allows us to consider a range of adversarial capabilities and enables systematic comparisons of attacks against ML systems, providing a clearer picture of the security threats that these attacks raise. By evaluating how much a new AML attack’s success depends on the strength of the adversary along each of the FAIL dimensions, researchers will be able to reason about the real effectiveness of the attack. Additionally, such evaluations may suggest promising directions for investigating defenses against the ML threats. </em> </div> </li><br>
+
+    <li> Rock Stevens, <u>Octavian Suciu</u>, Andrew Ruef, Sanghyun Hong, Michael Hicks, Tudor Dumitraş: <a href="https://arxiv.org/abs/1701.04739"><strong> Summoning Demons: The Pursuit of Exploitable Bugs in Machine Learning </strong></a> - <a href="https://sites.google.com/site/wildml2016nips/home"> NeurIPS 2016 Workshop on Reliable Machine Learning in the Wild</a>.
+        <button data-toggle="collapse" data-target="#neurips16", class="btn">Abstract</button>- <a href="https://www.technologyreview.com/s/603116/how-long-before-ai-systems-are-hacked-in-creative-new-ways/"><strong>[Media Coverage]</strong></a><a href="https://sites.google.com/site/wildml2016nips/SuciuSlides.pdf?attredirects=0"><strong>[Slides]</strong></a><a href="http://cs.stanford.edu/~jsteinhardt/wildml2016nips/videos/3_3_Octavian.wmv"><strong>[Talk]</strong></a>
+        <div id="neurips16" class="collapse">
+        <em> Governments and businesses increasingly rely on data analytics and machine learning (ML) for improving their competitive edge in areas such as consumer satisfaction, threat intelligence, decision making, and product efficiency. However, by cleverly corrupting a subset of data used as input to a target’s ML algorithms, an adversary can perturb outcomes and compromise the effectiveness of ML technology. While prior work in the field of adversarial machine learning has studied the impact of input manipulation on correct ML algorithms, we consider the exploitation of bugs in ML implementations. In this paper, we characterize the attack surface of ML programs, and we show that malicious inputs exploiting implementation bugs enable strictly more powerful attacks than the classic adversarial machine learning techniques. We propose a semi-automated technique, called steered fuzzing, for exploring this attack surface and for discovering exploitable bugs in machine learning programs, in order to demonstrate the magnitude of this threat. As a result of our work, we responsibly disclosed five vulnerabilities, established three new CVE-IDs, and illuminated a common insecure practice across many machine learning systems. Finally, we outline several research directions for further understanding and mitigating this threat. </em> </div> </li><br>
+
+    <li> Carl Sabottke, <u>Octavian Suciu</u>, Tudor Dumitraş: <a href="https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-sabottke.pdf"><strong>Vulnerability Disclosure in the Age of Social Media: Exploiting Twitter for Predicting Real-World Exploits</strong></a> - USENIX Security 2015 (16% Acceptance Rate).
+        <button data-toggle="collapse" data-target="#usenix15", class="btn">Abstract</button>- <a href="http://osuciu.com/usenix15data/"><strong>[Explore Data]</strong></a><a href="http://www.umiacs.umd.edu/~tdumitra/blog/2015/08/02/predicting-vulnerability-exploits/"><strong>[Blog Post]</strong></a><a href="http://www.umiacs.umd.edu/~tdumitra/papers/USENIX-SECURITY-2015-supplemental.pdf"><strong>[Features]</strong></a><a href="https://www.usenix.org/sites/default/files/conference/protected-files/sec15_slides_suciu.pdf"><strong>[Slides]</strong></a><a href="https://www.usenix.org/node/191007"><strong>[Talk]</strong></a>
+        <div id="usenix15" class="collapse">
+            <em>In recent years, the number of software vulnerabilities discovered has grown significantly. This creates a need for prioritizing the response to new disclosures by assessing which vulnerabilities are likely to be exploited and by quickly ruling out the vulnerabilities that are not actually exploited in the real world. We conduct a quantitative and qualitative exploration of the vulnerability-related information disseminated on Twitter. We then describe the design of a Twitter-based exploit detector, and we introduce a threat model specific to our problem. In addition to response prioritization, our detection techniques have applications in risk modeling for cyber-insurance and they highlight the value of information provided by the victims of attacks. </em> </div> </li><br>
+    
+
+</ul> <br><br>
+</div>
+<br><br>
+
+<a id="education"></a>
+<div class="container">
+<h4> Education </h4><hr>
+<ul>
+  <li><strong>PhD in Computer Science</strong> </li>
+  2021
+  <br>
+  University of Maryland, College Park
+  <br><br>
+  <li><strong>MS in Computer Science</strong> </li>
+  2017
+  <br>
+  University of Maryland, College Park
+  <br><br>
+  <li><strong>BS in Computer Science</strong></li>
+   2014
+   <br>
+   Technical University of Cluj-Napoca, Romania
+
+</ul>
+</div>
+
+<br>
+<br>
+
+
+<a id="contact"></a>
+<div class="container">
+  <h4> Contact </h4><hr>
+  <i class="fa fa-envelope" aria-hidden="true" style="font-size:16px"></i> <font color="#3090C7">osuciu at umd dot edu</font><br><br>
+
+  <i class="fa fa-address-card" aria-hidden="true" style="font-size:16px"> <strong>Office:</strong></i><br>
+
+  5104 Brendan Iribe Center,<br>
+  Department of Computer Science,<br>
+  University of Maryland, College Park.<br>
+  MD 20742
+  
+</div>
+<br><br>
+
+
+<footer class="container-fluid text-center">
+  <p><em>Last Updated April 19, 2022.</em></p>
+<br>
+</footer>
+
+
+</body>
+</html>
